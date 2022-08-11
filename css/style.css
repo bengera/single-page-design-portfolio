@@ -405,28 +405,28 @@ section {
     font-weight: 700; }
   .grid__graphic-design {
     background-color: #755CDE;
-    background-image: url(/assets/pattern-graphic-design.svg);
+    background-image: url(assets/pattern-graphic-design.svg);
     grid-column: 1 / -1;
     padding: 10rem;
     background-size: 115px; }
   .grid__ui-ux {
     background-color: #F6A560;
-    background-image: url(/assets/pattern-ui-ux.svg); }
+    background-image: url(assets/pattern-ui-ux.svg); }
   .grid__apps {
     background-color: #F39E9E;
-    background-image: url(/assets/pattern-apps.svg); }
+    background-image: url(assets/pattern-apps.svg); }
   .grid__illustrations {
     background-color: #EB7565;
     grid-column: 1 / -1;
-    background-image: url(/assets/pattern-illustrations.svg); }
+    background-image: url(assets/pattern-illustrations.svg); }
   .grid__photography {
     background-color: #61C4B7;
     grid-column: 1 / -1;
-    background-image: url(/assets/pattern-photography.svg); }
+    background-image: url(assets/pattern-photography.svg); }
   .grid__motion-graphics {
     background-color: #552049;
     grid-column: 1 / -1;
-    background-image: url(/assets/pattern-motion-graphics.svg); }
+    background-image: url(assets/pattern-motion-graphics.svg); }
 
 .grid-item {
   position: relative;

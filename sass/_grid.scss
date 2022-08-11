@@ -19,7 +19,7 @@
 
     &__graphic-design {
         background-color: $color-galatic-blue;
-        background-image: url(/assets/pattern-graphic-design.svg);
+        background-image: url(assets/pattern-graphic-design.svg);
         grid-column: 1 / -1;
         padding: 10rem;
         background-size: 115px;
@@ -28,14 +28,14 @@
 
     &__ui-ux {
         background-color: $color-summer-yellow;
-        background-image: url(/assets/pattern-ui-ux.svg);
+        background-image: url(assets/pattern-ui-ux.svg);
         
 
     }
 
     &__apps {
         background-color: $color-pink;
-        background-image: url(/assets/pattern-apps.svg);
+        background-image: url(assets/pattern-apps.svg);
         
 
     }
@@ -43,7 +43,7 @@
     &__illustrations {
         background-color: $color-light-red;
         grid-column: 1 / -1;
-        background-image: url(/assets/pattern-illustrations.svg);
+        background-image: url(assets/pattern-illustrations.svg);
        
 
     }
@@ -51,14 +51,14 @@
     &__photography {
         background-color: $color-cyan;
         grid-column: 1 / -1;
-        background-image: url(/assets/pattern-photography.svg);
+        background-image: url(assets/pattern-photography.svg);
 
     }
 
     &__motion-graphics {
         background-color: $color-dark-purple;
         grid-column: 1 / -1;
-        background-image: url(/assets/pattern-motion-graphics.svg);
+        background-image: url(assets/pattern-motion-graphics.svg);
 
     }
 }
