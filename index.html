@@ -3,43 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/swiper.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
+
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
+
 <body>
 
-  Free Consultation
+  <header class="header">
+    <div class="header__top">
+      <img src="/assets/logo.svg" alt="logo" class="header__logo">
+      <button class="header__button-cta button-1">Free Consultation</button>
+    </div>
+    <div class="header__bottom">
+      <h1 class="header__heading heading-s">Design solutions made easy</h1>
+      <p class="header__subtitle">With over ten years of experience in various design disciplines, I’m your one-stop
+        shop for your design needs.</p>
+    </div>
+  </header>
 
-  Design solutions made easy
+  <div class="grid">
+    <div class="grid__graphic-design grid-item">
+      <p class="grid__text">Graphic Design</p>
+    </div>
+    <div class="grid__ui-ux grid-item">
+      <p class=" grid__text">UI/UX</p>
+    </div>
+    <div class="grid__apps grid-item">
+      <p class=" grid__text">Apps</p>
+    </div>
+    <div class="grid__illustrations grid-item">
+      <p class=" grid__text">Illustrations</p>
+    </div>
+    <div class="grid__photography grid-item">
+      <p class=" grid__text">Photography</p>
+    </div>
+    <div class="grid__motion-graphics grid-item">
+      <p class=" grid__text">Motion Graphics</p>
+    </div>
+  </div>
 
-  With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
+  <section class="about">
+    <div class="about__left">
+      <img src="/assets/image-amy.webp" alt="amy" class="about__amy">
+    </div>
+    <div class="about__right">
+      <h2 class="about__heading">I’m Amy, and I’d love to work on your next project</h2>
+      <p class="about__description">
+        I love working with others to create beautiful design solutions. I’ve designed everything from brand
+        illustrations
+        to complete mobile apps. I’m also handy with a camera!
+      </p>
+      <button class="about__button button-2">Free Consultation</button>
+    </div>
+  </section>
 
-  Graphic Design
-  UI/UX
-  Apps
-  Photography
-  Illustrations
-  Motion Graphics
+  <div class="swiper">
 
-  I’m Amy, and I’d love to work on your next project
+    <h2 class="swiper-work">My Work</h2>
+   
+    <div class="swiper-wrapper">
 
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
+      <img src="/assets/image-slide-1.jpg" alt="slide-1" class="swiper-slide">
+      <img src="/assets/image-slide-2.jpg" alt="slide-2" class="swiper-slide">
+      <img src="/assets/image-slide-3.jpg" alt="slide-3" class="swiper-slide">
+      <img src="/assets/image-slide-4.jpg" alt="slide-4" class="swiper-slide">
+      <img src="/assets/image-slide-5.jpg" alt="slide-5" class="swiper-slide">
 
-  Free Consultation
+    </div>
 
-  My Work
+    <div class="btn-container">
+      <div class="btn-inner-container">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    </div>
+  
+  </div>
 
-  Book a call with me
+ <section class="booking">
+  <div class="booking__content-container">
+  <h2 class="booking__heading">Book a call with me</h2>
+  <p class="booking__description">
+    I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
+    free consultation. Then we can move forward from there.
+      </p>
+      <button class="booking__button button-2">Free Consultation</button>
+    </div>
+ </section>
 
-  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
-  free consultation. Then we can move forward from there.
+<footer class="footer">
+  <div class="footer__bottom">
+    <img src="/assets/logo.svg" alt="logo" class="header__logo">
+    <button class="header__button-cta button-1">Free Consultation</button>
+  </div>
+</footer>
+  
 
-  Free Consultation
 
-  Free Consultation
+
 
 </body>
+
 </html>

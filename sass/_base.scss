@@ -1,17 +1,22 @@
 // COLOR VARIABLES
-$color-yellow: #FCB72B;
+$color-black: #030303;
+$color-medium-brown: #7A746E;
+$color-light-cream: #FFF7F0;
 
-$font-mono: 'Space Mono',
-sans-serif;
-$font-lex: 'Lexend Deca',
+$color-galatic-blue: #755CDE;
+$color-summer-yellow: #F6A560;
+$color-pink: #F39E9E;
+$color-light-red: #EB7565;
+$color-cyan: #61C4B7;
+$color-dark-purple: #552049;
+
+
+$font-primary: 'Plus Jakarta Sans',
 sans-serif;
 
 // BREAKPOINTS
 $bp-tablet : 37.5em; //600
 $bp-desktop : 62.5em; //1000
-
-
-
 
 
 /// BASE
@@ -36,10 +41,83 @@ html {
 
 
 body {
-    font-family: $font-lex;
+    font-family: $font-primary;
     font-size: 16px;
     max-width: 1920px;
+    line-height: 26px;
     margin: 0 auto;
     overflow-x: hidden;
+    background-color: $color-light-cream;
+
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+// Typography
+
+.heading-l {
+    font-size: 56px;
+    line-height: 70px;
+}
+
+.heading-m {
+    font-size: 40px;
+    line-height: 51px;
+}
+
+
+.heading-s {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+// Interactive elements
+
+.button-1,
+.button-2 {
+
+
+    border-radius: 35px;
+    height: 50px;
+    width: 195px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    border: 0;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+
+
+}
+
+.button-1 {
+    background-color: $color-black;
+
+    &:hover {
+        background-color: $color-galatic-blue;
+    }
+}
+
+.button-2 {
+    background-color: $color-light-red;
+
+    &:hover {
+        background-color: $color-summer-yellow;
+    }
+}
+
+.footer {
+    margin-top: 40px;
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
     
 }
+

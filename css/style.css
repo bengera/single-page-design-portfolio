@@ -316,8 +316,206 @@ html {
   overflow-x: hidden; }
 
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   max-width: 1920px;
+  line-height: 26px;
   margin: 0 auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #FFF7F0; }
+
+section {
+  margin-bottom: 100px; }
+
+.heading-l {
+  font-size: 56px;
+  line-height: 70px; }
+
+.heading-m {
+  font-size: 40px;
+  line-height: 51px; }
+
+.heading-s {
+  font-size: 36px;
+  line-height: 40px; }
+
+.button-1,
+.button-2 {
+  border-radius: 35px;
+  height: 50px;
+  width: 195px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFF;
+  border: 0;
+  cursor: pointer;
+  line-height: 50px;
+  text-align: center; }
+
+.button-1 {
+  background-color: #030303; }
+  .button-1:hover {
+    background-color: #755CDE; }
+
+.button-2 {
+  background-color: #EB7565; }
+  .button-2:hover {
+    background-color: #F6A560; }
+
+.footer {
+  margin-top: 40px; }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; }
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; }
+
+.header__button-cta {
+  color: #FFF; }
+
+.header__bottom {
+  max-width: 343px;
+  margin: 0 auto;
+  text-align: center; }
+
+.header__subtitle {
+  color: #7A746E;
+  max-width: 285px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2fr 1.2fr repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 100px; }
+  .grid__text {
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem;
+    font-size: 24px;
+    font-weight: 700; }
+  .grid__graphic-design {
+    background-color: #755CDE;
+    background-image: url(/assets/pattern-graphic-design.svg);
+    grid-column: 1 / -1;
+    padding: 10rem;
+    background-size: 115px; }
+  .grid__ui-ux {
+    background-color: #F6A560;
+    background-image: url(/assets/pattern-ui-ux.svg); }
+  .grid__apps {
+    background-color: #F39E9E;
+    background-image: url(/assets/pattern-apps.svg); }
+  .grid__illustrations {
+    background-color: #EB7565;
+    grid-column: 1 / -1;
+    background-image: url(/assets/pattern-illustrations.svg); }
+  .grid__photography {
+    background-color: #61C4B7;
+    grid-column: 1 / -1;
+    background-image: url(/assets/pattern-photography.svg); }
+  .grid__motion-graphics {
+    background-color: #552049;
+    grid-column: 1 / -1;
+    background-image: url(/assets/pattern-motion-graphics.svg); }
+
+.grid-item {
+  position: relative;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: top 20px right 20px; }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; }
+  .about__amy {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 40px; }
+  .about__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    max-width: 343px; }
+  .about__description {
+    color: #7A746E; }
+  .about__heading {
+    line-height: 30px; }
+
+.swiper {
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 2rem; }
+
+.swiper-slide {
+  border-radius: 15px; }
+
+.btn-container {
+  margin-top: 3rem;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem; }
+
+.btn-inner-container {
+  display: flex;
+  margin: 1rem auto; }
+
+.swiper-button-prev,
+.swiper-button-next {
+  margin-top: 2rem;
+  background: black;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  color: #FFF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: initial;
+  margin: 0 1rem; }
+
+.swiper-button-prev {
+  background-image: url(/assets/icon-arrow-left.svg); }
+
+.swiper-button-next {
+  background-image: url(/assets/icon-arrow-right.svg); }
+
+.swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: none; }
+
+.swiper-work {
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.swiper-slide {
+  width: 80%; }
+
+.booking {
+  background-color: #030303;
+  color: #FFF7F0;
+  padding: 3rem 1.5rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 0 1rem;
+  text-align: center; }
+  .booking__content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; }

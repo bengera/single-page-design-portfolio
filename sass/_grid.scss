@@ -1,0 +1,71 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr 1.2fr repeat(3,1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 100px;
+    
+
+    &__text {
+        color: #FFF;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 1.5rem;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__graphic-design {
+        background-color: $color-galatic-blue;
+        background-image: url(/assets/pattern-graphic-design.svg);
+        grid-column: 1 / -1;
+        padding: 10rem;
+        background-size: 115px;
+                        
+    }
+
+    &__ui-ux {
+        background-color: $color-summer-yellow;
+        background-image: url(/assets/pattern-ui-ux.svg);
+        
+
+    }
+
+    &__apps {
+        background-color: $color-pink;
+        background-image: url(/assets/pattern-apps.svg);
+        
+
+    }
+
+    &__illustrations {
+        background-color: $color-light-red;
+        grid-column: 1 / -1;
+        background-image: url(/assets/pattern-illustrations.svg);
+       
+
+    }
+
+    &__photography {
+        background-color: $color-cyan;
+        grid-column: 1 / -1;
+        background-image: url(/assets/pattern-photography.svg);
+
+    }
+
+    &__motion-graphics {
+        background-color: $color-dark-purple;
+        grid-column: 1 / -1;
+        background-image: url(/assets/pattern-motion-graphics.svg);
+
+    }
+}
+
+.grid-item {
+    position: relative; 
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: top 20px right 20px;
+}

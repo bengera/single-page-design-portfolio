@@ -1,0 +1,32 @@
+.header {
+
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    &__logo {}
+
+    &__button-cta {
+        color: #FFF;
+    }
+
+    &__bottom {
+        max-width: 343px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    &__subtitle {
+        color: $color-medium-brown;
+        max-width: 285px;
+    }
+
+
+
+
+}

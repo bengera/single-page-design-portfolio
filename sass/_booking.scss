@@ -1,0 +1,19 @@
+.booking {
+    background-color: $color-black;
+    color: $color-light-cream;
+    padding: 3rem 1.5rem 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+
+    border-radius: 15px;
+    margin: 0 1rem;
+    text-align: center;
+
+    &__content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
