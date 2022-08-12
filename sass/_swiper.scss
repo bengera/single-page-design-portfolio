@@ -3,6 +3,10 @@
     max-width: 400px;
     height: auto;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        max-width: 576px;  
+    }
 }
 
 .swiper-slide {
@@ -62,6 +66,10 @@
 .swiper-work {
     text-align: center;
     margin-bottom: 2rem;
+
+    @media only screen and (min-width: $bp-tablet) {
+        margin-bottom: 56PX;   
+    }
 }
 
 .swiper-slide { width: 80% }

@@ -1,5 +1,5 @@
 .header {
-
+    margin-bottom: 32px;
 
     &__top {
         display: flex;
@@ -18,12 +18,22 @@
         max-width: 343px;
         margin: 0 auto;
         text-align: center;
+
+        @media only screen and (min-width: $bp-tablet) {
+            max-width: 690px;
+        }
     }
 
 
     &__subtitle {
         color: $color-medium-brown;
         max-width: 285px;
+        margin: 0 auto;
+
+        @media only screen and (min-width: $bp-tablet) {
+            max-width: 573px;
+            margin: 0 auto;
+        }
     }
 
 

@@ -1,11 +1,10 @@
 .booking {
     background-color: $color-black;
     color: $color-light-cream;
-    padding: 3rem 1.5rem 1.5rem 1rem;
+    // padding: 3rem 1.5rem 1.5rem 1rem;
+    padding: 3rem;  
     display: flex;
     flex-direction: column;
-
-
     border-radius: 15px;
     margin: 0 1rem;
     text-align: center;
@@ -15,5 +14,10 @@
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+    }
+
+    &__description {
+        max-width: 540px;
+        
     }
 }

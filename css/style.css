@@ -370,23 +370,30 @@ section {
     align-items: center;
     padding: 1rem; }
 
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem; }
-
-.header__button-cta {
-  color: #FFF; }
-
-.header__bottom {
-  max-width: 343px;
-  margin: 0 auto;
-  text-align: center; }
-
-.header__subtitle {
-  color: #7A746E;
-  max-width: 285px; }
+.header {
+  margin-bottom: 32px; }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; }
+  .header__button-cta {
+    color: #FFF; }
+  .header__bottom {
+    max-width: 343px;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (min-width: 37.5em) {
+      .header__bottom {
+        max-width: 690px; } }
+  .header__subtitle {
+    color: #7A746E;
+    max-width: 285px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 37.5em) {
+      .header__subtitle {
+        max-width: 573px;
+        margin: 0 auto; } }
 
 .grid {
   display: grid;
@@ -395,6 +402,10 @@ section {
   gap: 1rem;
   padding: 1rem;
   margin-bottom: 100px; }
+  @media only screen and (min-width: 37.5em) {
+    .grid {
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 3fr 2.3fr 2.8fr; } }
   .grid__text {
     color: #FFF;
     position: absolute;
@@ -409,6 +420,10 @@ section {
     grid-column: 1 / -1;
     padding: 10rem;
     background-size: 115px; }
+    @media only screen and (min-width: 37.5em) {
+      .grid__graphic-design {
+        grid-column: 1/2;
+        grid-row: 1/3; } }
   .grid__ui-ux {
     background-color: #F6A560;
     background-image: url(../assets/pattern-ui-ux.svg); }
@@ -419,14 +434,24 @@ section {
     background-color: #EB7565;
     grid-column: 1 / -1;
     background-image: url(../assets/pattern-illustrations.svg); }
+    @media only screen and (min-width: 37.5em) {
+      .grid__illustrations {
+        grid-column: 2 / -1; } }
   .grid__photography {
     background-color: #61C4B7;
     grid-column: 1 / -1;
     background-image: url(../assets/pattern-photography.svg); }
+    @media only screen and (min-width: 37.5em) {
+      .grid__photography {
+        grid-column: 1/2;
+        grid-row: 3/3; } }
   .grid__motion-graphics {
     background-color: #552049;
     grid-column: 1 / -1;
     background-image: url(../assets/pattern-motion-graphics.svg); }
+    @media only screen and (min-width: 37.5em) {
+      .grid__motion-graphics {
+        grid-column: 2/-1; } }
 
 .grid-item {
   position: relative;
@@ -438,7 +463,12 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1rem; }
+  @media only screen and (min-width: 37.5em) {
+    .about {
+      flex-direction: row;
+      gap: 4.3125rem; } }
   .about__amy {
     width: 300px;
     height: 300px;
@@ -450,6 +480,11 @@ section {
     text-align: center;
     gap: 2rem;
     max-width: 343px; }
+    @media only screen and (min-width: 37.5em) {
+      .about__right {
+        gap: 1rem;
+        align-items: unset;
+        text-align: unset; } }
   .about__description {
     color: #7A746E; }
   .about__heading {
@@ -459,6 +494,9 @@ section {
   max-width: 400px;
   height: auto;
   margin-bottom: 2rem; }
+  @media only screen and (min-width: 37.5em) {
+    .swiper {
+      max-width: 576px; } }
 
 .swiper-slide {
   border-radius: 15px; }
@@ -501,6 +539,9 @@ section {
 .swiper-work {
   text-align: center;
   margin-bottom: 2rem; }
+  @media only screen and (min-width: 37.5em) {
+    .swiper-work {
+      margin-bottom: 56PX; } }
 
 .swiper-slide {
   width: 80%; }
@@ -508,7 +549,7 @@ section {
 .booking {
   background-color: #030303;
   color: #FFF7F0;
-  padding: 3rem 1.5rem 1.5rem 1rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -519,3 +560,5 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 2rem; }
+  .booking__description {
+    max-width: 540px; }
