@@ -2,11 +2,19 @@
 
     max-width: 400px;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 6.25rem;
+    overflow: visible;
 
     @media only screen and (min-width: $bp-tablet) {
         max-width: 576px;  
+        margin-bottom: 7.5rem;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+       margin-bottom: 5.5rem 
+    }
+
+
 }
 
 .swiper-slide {
@@ -25,6 +33,10 @@
 .btn-inner-container {
     display: flex;
     margin: 1rem auto;
+
+    @media only screen and (min-width: $bp-desktop) {
+        margin-top: 56px;
+    }
     
    }
    
@@ -42,6 +54,14 @@
     background-position: center center;
     position: initial;
     margin: 0 1rem;
+
+    &:hover {
+
+        @media only screen and (min-width: $bp-desktop) {
+            background-color: $color-galatic-blue;
+        }
+
+    }
    
 
 }
@@ -68,8 +88,12 @@
     margin-bottom: 2rem;
 
     @media only screen and (min-width: $bp-tablet) {
-        margin-bottom: 56PX;   
+        margin-bottom: 56px;
+        font-size: 32px;
+}   
     }
-}
+
+    
+
 
 .swiper-slide { width: 80% }

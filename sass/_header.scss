@@ -1,14 +1,23 @@
 .header {
     margin-bottom: 32px;
 
+    @media only screen and (min-width: $bp-desktop) {
+        margin-bottom: 80px;       
+    }
+
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
+        margin-bottom: 64px; 
+
+        @media only screen and (min-width: $bp-tablet) {
+            margin-bottom: 66px; 
+        }
     }
 
-    &__logo {}
+    // &__logo {}
 
     &__button-cta {
         color: #FFF;
@@ -21,6 +30,10 @@
 
         @media only screen and (min-width: $bp-tablet) {
             max-width: 690px;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            max-width: 757px;
         }
     }
 

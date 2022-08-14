@@ -11,6 +11,12 @@
         grid-template-rows: 3fr 2.3fr 2.8fr;
     }
 
+    @media only screen and (min-width: $bp-desktop) {
+        grid-template-columns: 2fr 1fr 1fr 2.4fr;
+        grid-template-rows: 1.2fr 1fr;
+        height: 391px;
+    }
+
     &__text {
         color: #FFF;
         position: absolute;
@@ -58,6 +64,11 @@
             grid-column: 2 / -1;
         }
 
+        @media only screen and (min-width: $bp-desktop) {
+            grid-row: 2/ -1;
+            grid-column: 2 / 4;
+        }
+
 
     }
 
@@ -70,6 +81,12 @@
             grid-column: 1/2;
             grid-row: 3/3;
         }
+
+        @media only screen and (min-width: $bp-desktop) {
+            grid-column: 4/-1;
+            grid-row: 1/1;
+        }
+
     }
 
     &__motion-graphics {
@@ -79,6 +96,10 @@
 
         @media only screen and (min-width: $bp-tablet) {
             grid-column: 2/-1;
+        }
+
+        @media only screen and (min-width: $bp-desktop) {
+            grid-column: 4/-1;
         }
     }
 }

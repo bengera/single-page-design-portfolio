@@ -1,23 +1,65 @@
 .booking {
     background-color: $color-black;
     color: $color-light-cream;
-    // padding: 3rem 1.5rem 1.5rem 1rem;
-    padding: 3rem;  
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     margin: 0 1rem;
     text-align: center;
 
+    @media only screen and (min-width: $bp-desktop) {
+       
+        text-align: left;
+        padding: 4.5rem;
+    }
+
     &__content-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+
+        @media only screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            align-items: initial;
+
+        }
     }
 
     &__description {
         max-width: 540px;
+
+        @media only screen and (min-width: $bp-desktop) {
+            font-size: 18px;
+        }
+    }
+
+    &__top-content {
+
+        @media only screen and (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+       
+    }
+
+    &__button {
+        @media only screen and (min-width: $bp-desktop) {
+            justify-self: center;
+            margin: 2rem 4rem 0rem 7rem;
+        }
+    }
+
+    &__heading {
+
+        @media only screen and (min-width: $bp-tablet) {
+            font-size: 32px;
+        }
         
+        @media only screen and (min-width: $bp-desktop) {
+            font-size: 40px;
+        }
     }
 }

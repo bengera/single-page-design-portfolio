@@ -318,7 +318,7 @@ html {
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
-  max-width: 1920px;
+  max-width: 1140px;
   line-height: 26px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -338,6 +338,9 @@ section {
 .heading-s {
   font-size: 36px;
   line-height: 40px; }
+  @media only screen and (min-width: 62.5em) {
+    .heading-s {
+      font-size: 56px; } }
 
 .button-1,
 .button-2 {
@@ -354,13 +357,15 @@ section {
 
 .button-1 {
   background-color: #030303; }
-  .button-1:hover {
-    background-color: #755CDE; }
+  @media only screen and (min-width: 62.5em) {
+    .button-1:hover {
+      background-color: #755CDE; } }
 
 .button-2 {
   background-color: #EB7565; }
-  .button-2:hover {
-    background-color: #F6A560; }
+  @media only screen and (min-width: 62.5em) {
+    .button-2:hover {
+      background-color: #F6A560; } }
 
 .footer {
   margin-top: 40px; }
@@ -372,11 +377,18 @@ section {
 
 .header {
   margin-bottom: 32px; }
+  @media only screen and (min-width: 62.5em) {
+    .header {
+      margin-bottom: 80px; } }
   .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem; }
+    padding: 1rem;
+    margin-bottom: 64px; }
+    @media only screen and (min-width: 37.5em) {
+      .header__top {
+        margin-bottom: 66px; } }
   .header__button-cta {
     color: #FFF; }
   .header__bottom {
@@ -386,6 +398,9 @@ section {
     @media only screen and (min-width: 37.5em) {
       .header__bottom {
         max-width: 690px; } }
+    @media only screen and (min-width: 62.5em) {
+      .header__bottom {
+        max-width: 757px; } }
   .header__subtitle {
     color: #7A746E;
     max-width: 285px;
@@ -406,6 +421,11 @@ section {
     .grid {
       grid-template-columns: 2fr 1fr 1fr;
       grid-template-rows: 3fr 2.3fr 2.8fr; } }
+  @media only screen and (min-width: 62.5em) {
+    .grid {
+      grid-template-columns: 2fr 1fr 1fr 2.4fr;
+      grid-template-rows: 1.2fr 1fr;
+      height: 391px; } }
   .grid__text {
     color: #FFF;
     position: absolute;
@@ -437,6 +457,10 @@ section {
     @media only screen and (min-width: 37.5em) {
       .grid__illustrations {
         grid-column: 2 / -1; } }
+    @media only screen and (min-width: 62.5em) {
+      .grid__illustrations {
+        grid-row: 2/ -1;
+        grid-column: 2 / 4; } }
   .grid__photography {
     background-color: #61C4B7;
     grid-column: 1 / -1;
@@ -445,6 +469,10 @@ section {
       .grid__photography {
         grid-column: 1/2;
         grid-row: 3/3; } }
+    @media only screen and (min-width: 62.5em) {
+      .grid__photography {
+        grid-column: 4/-1;
+        grid-row: 1/1; } }
   .grid__motion-graphics {
     background-color: #552049;
     grid-column: 1 / -1;
@@ -452,6 +480,9 @@ section {
     @media only screen and (min-width: 37.5em) {
       .grid__motion-graphics {
         grid-column: 2/-1; } }
+    @media only screen and (min-width: 62.5em) {
+      .grid__motion-graphics {
+        grid-column: 4/-1; } }
 
 .grid-item {
   position: relative;
@@ -469,10 +500,18 @@ section {
     .about {
       flex-direction: row;
       gap: 4.3125rem; } }
+  @media only screen and (min-width: 62.5em) {
+    .about {
+      max-width: 1110px;
+      gap: 7.8125rem; } }
   .about__amy {
     width: 300px;
     height: 300px;
     margin-bottom: 40px; }
+    @media only screen and (min-width: 62.5em) {
+      .about__amy {
+        width: 445px;
+        height: 445px; } }
   .about__right {
     display: flex;
     flex-direction: column;
@@ -485,18 +524,31 @@ section {
         gap: 1rem;
         align-items: unset;
         text-align: unset; } }
+    @media only screen and (min-width: 62.5em) {
+      .about__right {
+        gap: 2.125rem;
+        max-width: 540px; } }
   .about__description {
     color: #7A746E; }
   .about__heading {
     line-height: 30px; }
+    @media only screen and (min-width: 62.5em) {
+      .about__heading {
+        font-size: 40px;
+        line-height: 50px; } }
 
 .swiper {
   max-width: 400px;
   height: auto;
-  margin-bottom: 2rem; }
+  margin-bottom: 6.25rem;
+  overflow: visible; }
   @media only screen and (min-width: 37.5em) {
     .swiper {
-      max-width: 576px; } }
+      max-width: 576px;
+      margin-bottom: 7.5rem; } }
+  @media only screen and (min-width: 62.5em) {
+    .swiper {
+      margin-bottom: 5.5rem; } }
 
 .swiper-slide {
   border-radius: 15px; }
@@ -511,6 +563,9 @@ section {
 .btn-inner-container {
   display: flex;
   margin: 1rem auto; }
+  @media only screen and (min-width: 62.5em) {
+    .btn-inner-container {
+      margin-top: 56px; } }
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -524,6 +579,10 @@ section {
   background-position: center center;
   position: initial;
   margin: 0 1rem; }
+  @media only screen and (min-width: 62.5em) {
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      background-color: #755CDE; } }
 
 .swiper-button-prev {
   background-image: url(../assets/icon-arrow-left.svg); }
@@ -541,7 +600,8 @@ section {
   margin-bottom: 2rem; }
   @media only screen and (min-width: 37.5em) {
     .swiper-work {
-      margin-bottom: 56PX; } }
+      margin-bottom: 56px;
+      font-size: 32px; } }
 
 .swiper-slide {
   width: 80%; }
@@ -555,10 +615,36 @@ section {
   border-radius: 15px;
   margin: 0 1rem;
   text-align: center; }
+  @media only screen and (min-width: 62.5em) {
+    .booking {
+      text-align: left;
+      padding: 4.5rem; } }
   .booking__content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem; }
+    @media only screen and (min-width: 62.5em) {
+      .booking__content-container {
+        flex-direction: row;
+        align-items: initial; } }
   .booking__description {
     max-width: 540px; }
+    @media only screen and (min-width: 62.5em) {
+      .booking__description {
+        font-size: 18px; } }
+  @media only screen and (min-width: 37.5em) {
+    .booking__top-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; } }
+  @media only screen and (min-width: 62.5em) {
+    .booking__button {
+      justify-self: center;
+      margin: 2rem 4rem 0rem 7rem; } }
+  @media only screen and (min-width: 37.5em) {
+    .booking__heading {
+      font-size: 32px; } }
+  @media only screen and (min-width: 62.5em) {
+    .booking__heading {
+      font-size: 40px; } }

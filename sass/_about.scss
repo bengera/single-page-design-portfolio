@@ -8,21 +8,29 @@
     @media only screen and (min-width: $bp-tablet) {
         flex-direction: row;
         gap: 4.3125rem;
-        
-    }
-    
-
-    &__left {
 
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        max-width: 1110px;
+        gap: 7.8125rem;
+    }
+
+
+    &__left {}
 
     &__amy {
         width: 300px;
         height: 300px;
         margin-bottom: 40px;
+
+        @media only screen and (min-width: $bp-desktop) {
+            width: 445px;
+            height: 445px;
+        }
     }
 
-    
+
 
     &__right {
         display: flex;
@@ -37,7 +45,12 @@
             align-items: unset;
             text-align: unset;
         }
-        
+
+        @media only screen and (min-width: $bp-desktop) {
+            gap: 2.125rem;
+            max-width: 540px;
+        }
+
     }
 
     &__description {
@@ -46,9 +59,13 @@
 
     &__heading {
         line-height: 30px;
+
+        @media only screen and (min-width: $bp-desktop) {
+            font-size: 40px;
+            line-height: 50px
+        }
     }
 
 
 
 }
-
