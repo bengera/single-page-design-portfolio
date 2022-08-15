@@ -87,7 +87,7 @@ that can be reused.
 
 ### Things I am still not sure about
 
-1. I was not sure how to make the slider extend slightly beyond the max with of the container without
+1. I was not sure how to make the slider extend slightly beyond the max width of the container without
 breaking the layout (using absolute positioning) or taking the slider out of the container. I suppose that
 I could have let the swiper fill the max width and added padding to the rest of the content, but that seemed a little inconvenient.
 
