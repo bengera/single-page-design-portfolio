@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-[Live Solution](https://www.frontendmentor.io/challenges/singlepage-design-portfolio-2MMhyhfKVo)
+[Live Solution](https://bengera.github.io/single-page-design-portfolio/)
 
 ## My process
 
